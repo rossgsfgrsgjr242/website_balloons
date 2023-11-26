@@ -1,0 +1,137 @@
+h1 {
+  font-size: 3em;
+  color: #99007f;
+  font-weight: 400;
+  font-family: "Courier New", Courier, monospace;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #4c0072;
+  background-color: #f0e6f5;
+  padding: 0.5em;
+  margin-bottom: 0;
+  animation-name: h1changetoyellow;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  animation-direction: alternate;
+}
+
+h2 {
+  font-size: 1.5em;
+  font-style: italic;
+  background-color: #f0e6f5;
+  padding-top: 0.25em;
+  padding-bottom: 0.25em;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+}
+
+h3 {
+  padding-bottom: 0.25em;
+  background-color: #f0e6f5;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #555555;
+}
+
+h2,
+h3,
+h4 {
+  color: #99007f;
+}
+
+ul {
+  list-style-type: square;
+}
+
+ol {
+  list-style: decimal-leading-zero;
+}
+
+a:link {
+  color: #99007f;
+}
+
+a:visited {
+  color: #876399;
+}
+
+a:hover {
+  color: #339900;
+}
+
+.highlight {
+  color: #ff6600;
+}
+
+h1.highlight {
+  text-transform: uppercase;
+}
+
+p.highlight {
+  font-style: italic;
+}
+
+.special {
+  font-size: 2em;
+  color: #00aa00;
+  font-style: italic;
+}
+
+.navigation {
+  background-color: #d9eece;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  border: #4c0072;
+  border-style: solid;
+  border-width: 1px;
+}
+
+.navigation a {
+  text-decoration: none;
+  color: #226800;
+  font: bold;
+  display: block;
+  padding-top: 0.75em;
+  padding-bottom: 0.75em;
+  padding-left: 1em;
+  padding-right: 1em;
+  transition: background-color 0.5s ease-in-out;
+}
+
+.navigation a:hover {
+  background-color: #c4e8b1;
+}
+
+@media screen and (min-width: 350px) {
+  .navigation {
+    display: flex;
+  }
+}
+@keyframes h1changetoyellow {
+  0% {
+    background-color: #f0e6f5;
+    left: 0px;
+    top: 0px;
+  }
+  25% {
+    background-color: yellow;
+    left: 200px;
+    top: 0px;
+  }
+  50% {
+    background-color: blue;
+    left: 200px;
+    top: 200px;
+  }
+  100% {
+    background-color: green;
+    left: 0px;
+    top: 0px;
+  }
+}
