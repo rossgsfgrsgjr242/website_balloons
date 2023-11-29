@@ -1,48 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="balloons.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="balloons.css" />
     <title>Contact Us</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <header>
-        <h1>Balloons Ltd</h1>
+      <h1>Balloons Ltd</h1>
 
-
-        <nav>
-            <ul class="navigation">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="about-us.html">About Us</a></li>
-                <li><a href="contact-us.html">Contact Us</a></li>
-            </ul>
-        </nav>
-
+      <nav>
+        <ul class="navigation">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="about-us.html">About Us</a></li>
+          <li><a href="contact-us.html">Contact Us</a></li>
+        </ul>
+      </nav>
     </header>
 
     <main>
-        <article>
-            <p>Please feel free to <a href="mailto:balloons@example.com">send us an email</a>
-                if you would like to know more about our products.
-            </p>
-        </article>
-        <h2>Contact Us</h2>
+      <article>
+        <p>
+          Please feel free to
+          <a href="mailto:balloons@example.com">send us an email</a>
+          if you would like to know more about our products.
+        </p>
+      </article>
+      <h2>Contact Us</h2>
 
+      <form id="myForm" action="" novalidate>
+        <div class="form-control">
+          <label for="fullName">Your full name</label>
+          <input
+            required
+            id="fullName"
+            type="text"
+            name="full_name"
+            style="width: 100%"
+          />
+          <div class="field-error"></div>
+        </div>
 
-        <form action="">
-            <label for="name">Name:</label><br>
-            <input type="text" style="width:100%"><br>
-            <label for="email">Email:</label><br>
-            <input type="text" style="width:100%"><br>
-            <label for="message">Message:</label><br>
-            <input type="text" style="height:200px; width:100%"><br>
-            <input type="submit" value="Send">
-        </form>
+        <div class="form-control">
+          <label for="emailAddress">Your email</label>
+          <input
+            required
+            id="emailAddress"
+            type="email"
+            name="email_address"
+            style="width: 100%"
+          />
+          <div class="field-error"></div>
+        </div>
+
+        <label for="message">Message:</label><br />
+        <input type="text" style="height: 200px; width: 100%" /><br />
+
+        <input type="submit" value="Go!" />
+      </form>
     </main>
-</body>
-
+    <script src="form.js"></script>
+  </body>
 </html>
